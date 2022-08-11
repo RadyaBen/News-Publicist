@@ -1,6 +1,6 @@
 import { FC } from 'react';
 
-import { useTypedSelector } from '../../hooks/useTypedSelector';
+import { useTypedSelector } from '../../hooks';
 
 import { Typography, Box } from '@material-ui/core';
 
@@ -19,6 +19,6 @@ const Counter: FC = () => {
 			</Typography>
 		</Box>
 	);
-}
+};
 
-export default Counter;
+export { Counter };

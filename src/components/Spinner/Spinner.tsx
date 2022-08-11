@@ -64,4 +64,4 @@ const Spinner: FC = () => {
 	);
 }
 
-export default Spinner;
+export { Spinner };

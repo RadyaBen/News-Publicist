@@ -1,8 +1,8 @@
 import { createStore, compose, applyMiddleware } from 'redux';
 import ReduxThunk, { ThunkDispatch } from 'redux-thunk';
 
-import { ArticlesAction, SearchArticlesAction } from './../types/articlesType';
-import { rootReducer, RootState } from '../helpers/combineReducers';
+import { ArticlesAction, SearchArticlesAction } from './../types';
+import { rootReducer, RootState } from '../helpers';
 
 const stringMiddleware = () => (next: any) => (action: any) => {
 	if (typeof action === 'string') {
@@ -27,4 +27,4 @@ const store = createStore(rootReducer,
 
 export type AppDispatch = ThunkDispatch<RootState, any, ArticlesAction | SearchArticlesAction>;
 
-export default store;
+export { store };

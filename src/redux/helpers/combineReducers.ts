@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux';
 
-import { articles } from '../reducers/articles';
-import { searchArticles } from '../reducers/searchArticles';
+import { articles } from '../reducers';
+import { searchArticles } from '../reducers';
 
 export const rootReducer = combineReducers({
 	articles: articles,

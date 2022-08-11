@@ -1,4 +1,4 @@
-import { ArticlesAction, ArticlesActionTypes, ArticlesState } from '../types/articlesType';
+import { ArticlesAction, ArticlesActionTypes, ArticlesState } from '../types';
 
 const initialState: ArticlesState = {
 	articles: [],

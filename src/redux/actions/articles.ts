@@ -1,7 +1,7 @@
 import { Dispatch } from 'redux';
 import axios from 'axios';
 
-import { ArticlesAction, ArticlesActionTypes } from '../types/articlesType';
+import { ArticlesAction, ArticlesActionTypes } from '../types';
 import { IArticle } from '../../types/articles';
 
 export const fetchArticles = () => async (dispatch: Dispatch<ArticlesAction>) => {

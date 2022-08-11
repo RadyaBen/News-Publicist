@@ -1,6 +1,6 @@
 import { Dispatch } from 'redux';
 
-import { SearchArticlesAction, ArticlesActionTypes } from '../types/articlesType';
+import { SearchArticlesAction, ArticlesActionTypes } from '../types';
 import { IArticle } from '../../types/articles';
 
 export const searchArticles = (term: string, articles: IArticle[]) => (dispatch: Dispatch<SearchArticlesAction>) => {

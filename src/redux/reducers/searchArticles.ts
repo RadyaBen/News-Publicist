@@ -1,4 +1,4 @@
-import { SearchArticlesAction, ArticlesActionTypes, SearchArticlesState } from '../types/articlesType';
+import { SearchArticlesAction, ArticlesActionTypes, SearchArticlesState } from '../types';
 
 const initialState: SearchArticlesState = {
 	searchInput: '',
