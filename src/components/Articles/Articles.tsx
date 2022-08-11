@@ -3,9 +3,9 @@ import { FC, useEffect } from 'react';
 import { useAppDispatch } from '../../hooks';
 import { useTypedSelector } from '../../hooks';
 import { fetchArticles } from '../../redux/actions';
-import { ArticleCard } from '../../components/ArticleCard';
-import { Spinner } from '../../components/Spinner';
-import { ErrorMessage } from '../../components/ErrorMessage';
+import { ArticleCard } from '../ArticleCard';
+import { Spinner } from '../Spinner';
+import { ErrorMessage } from '../ErrorMessage';
 
 import { Container, Grid } from '@material-ui/core';
 
