@@ -1,8 +1,8 @@
 import { FC } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-import { MainPage } from '../pages';
-import { ArticlePage } from '../../containers/ArticlePage';
+import { MainPage } from '../MainPage';
+import { ArticlePage } from '../ArticlePage';
 import { NotFoundPage } from '../NotFoundPage';
 
 const App: FC = () => {

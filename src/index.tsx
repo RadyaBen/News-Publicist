@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import { store } from './redux/helpers';
 
-import { App } from './components/App';
+import { store } from './redux/helpers';
+import { App } from './pages/App';
 
 import './index.scss';
 
