@@ -1,7 +1,7 @@
 import { FC, useState } from 'react';
-import { useDispatch } from 'react-redux';
-import { useTypedSelector } from '../../hooks/useTypedSelector';
 
+import { useTypedSelector } from '../../hooks/useTypedSelector';
+import { useAppDispatch } from '../../hooks/useTypedDispatch';
 import { ArticlesActionTypes } from '../../redux/types/articlesType';
 import { searchArticles } from '../../redux/actions/searchArticles';
 
@@ -14,7 +14,8 @@ const SearchBar: FC = () => {
 	const [searchInput, setSearchInput] = useState('');
 	
 	const { articles } = useTypedSelector(state => state.articles);
-	const dispatch = useDispatch();
+
+	const dispatch = useAppDispatch();
 
 	const updateInputValue = (searchValue: string) => {
 
@@ -23,7 +24,7 @@ const SearchBar: FC = () => {
 		setSearchInput(searchValue);
 		
 		dispatch(searchArticles(searchValue, articles));
-	}
+	};
 
 	return (
 		<div className="search">
@@ -46,6 +47,6 @@ const SearchBar: FC = () => {
 				/>
 		</div>
 	);
-}
+};
 
 export default SearchBar;

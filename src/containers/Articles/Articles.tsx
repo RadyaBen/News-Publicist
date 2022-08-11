@@ -1,6 +1,6 @@
 import { FC, useEffect } from 'react';
-import { useDispatch } from 'react-redux';
 
+import { useAppDispatch } from '../../hooks/useTypedDispatch';
 import { useTypedSelector } from '../../hooks/useTypedSelector';
 import { fetchArticles } from '../../redux/actions/articles';
 import ArticleCard from '../../components/ArticleCard/ArticleCard';
@@ -15,11 +15,11 @@ const Articles: FC = () => {
 	const { articles, articlesLoadingStatus } = useTypedSelector(state => state.articles);
 	const { filteredArticles, searchInput } = useTypedSelector(state => state.searchArticles);
 
-	const dispatch = useDispatch();
+	const dispatch = useAppDispatch();
 
 	useEffect(() => {
 		dispatch(fetchArticles())
-	}, []);
+	}, [dispatch]);
 
 	if (articlesLoadingStatus === "loading") {
 		return <Spinner />;
@@ -46,11 +46,11 @@ const Articles: FC = () => {
 							</Grid>
 						))}
 					</Grid>
-					)
+				)
 				}
 			</Container>
 		</>
 	);
-}
+};
 
 export default Articles;
