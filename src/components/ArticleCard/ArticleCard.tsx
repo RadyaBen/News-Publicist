@@ -24,7 +24,7 @@ const ArticleCard: FC<ArticleProps> = ({ article }) => {
 
 	const createMarkup = (html: string) => {
 		return { __html: html }
-	}
+	};
 
 	return (
 		<>
@@ -32,7 +32,7 @@ const ArticleCard: FC<ArticleProps> = ({ article }) => {
 				<CardMedia
 					className="card__img"
 					component="img"
-					alt={article.title.slice(0, 15)}
+					alt={article.title?.slice(0, 15)}
 					image={article.urlToImage}
 					title="News Image"
 				/>
@@ -65,6 +65,6 @@ const ArticleCard: FC<ArticleProps> = ({ article }) => {
 			</Card>
 		</>
 	);
-}
+};
 
 export default ArticleCard;
