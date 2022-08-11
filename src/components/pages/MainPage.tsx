@@ -1,8 +1,8 @@
 import { FC } from 'react';
 
-import SearchBar from '../../containers/SearchBar/SearchBar';
-import Counter from '../Counter/Counter';
-import Articles from '../../containers/Articles/Articles';
+import { SearchBar } from '../../containers/SearchBar/SearchBar';
+import { Counter } from '../Counter/Counter';
+import { Articles } from '../../containers/Articles/Articles';
 
 const MainPage: FC = () => {
 	return (
@@ -14,4 +14,4 @@ const MainPage: FC = () => {
 	);
 }
 
-export default MainPage;
+export { MainPage };

@@ -1,9 +1,9 @@
 import { FC, useState } from 'react';
 
-import { useTypedSelector } from '../../hooks/useTypedSelector';
-import { useAppDispatch } from '../../hooks/useTypedDispatch';
-import { ArticlesActionTypes } from '../../redux/types/articlesType';
-import { searchArticles } from '../../redux/actions/searchArticles';
+import { useTypedSelector } from '../../hooks';
+import { useAppDispatch } from '../../hooks';
+import { ArticlesActionTypes } from '../../redux/types';
+import { searchArticles } from '../../redux/actions';
 
 import { Typography, TextField, InputAdornment } from '@material-ui/core';
 import SearchIcon from '@mui/icons-material/Search';
@@ -49,4 +49,4 @@ const SearchBar: FC = () => {
 	);
 };
 
-export default SearchBar;
+export { SearchBar };

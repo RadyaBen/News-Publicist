@@ -67,4 +67,4 @@ const ArticleCard: FC<ArticleProps> = ({ article }) => {
 	);
 };
 
-export default ArticleCard;
+export { ArticleCard };

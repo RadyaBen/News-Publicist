@@ -1,11 +1,11 @@
 import { FC, useEffect } from 'react';
 
-import { useAppDispatch } from '../../hooks/useTypedDispatch';
-import { useTypedSelector } from '../../hooks/useTypedSelector';
-import { fetchArticles } from '../../redux/actions/articles';
-import ArticleCard from '../../components/ArticleCard/ArticleCard';
-import Spinner from '../../components/Spinner/Spinner';
-import ErrorMessage from '../../components/ErrorMessage/ErrorMessage';
+import { useAppDispatch } from '../../hooks';
+import { useTypedSelector } from '../../hooks';
+import { fetchArticles } from '../../redux/actions';
+import { ArticleCard } from '../../components/ArticleCard';
+import { Spinner } from '../../components/Spinner';
+import { ErrorMessage } from '../../components/ErrorMessage';
 
 import { Container, Grid } from '@material-ui/core';
 
@@ -53,4 +53,4 @@ const Articles: FC = () => {
 	);
 };
 
-export default Articles;
+export { Articles };

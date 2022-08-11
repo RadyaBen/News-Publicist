@@ -8,6 +8,6 @@ const ErrorMessage: FC = () => {
 			objectFit: 'contain', margin: '0 auto'
 		}} src={img} alt="Error" />
 	);
-}
+};
 
-export default ErrorMessage;
+export { ErrorMessage };

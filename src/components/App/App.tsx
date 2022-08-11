@@ -1,9 +1,9 @@
 import { FC } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-import MainPage from '../pages';
-import ArticlePage from '../../containers/ArticlePage/ArticlePage';
-import NotFoundPage from '../NotFoundPage/NotFoundPage';
+import { MainPage } from '../pages';
+import { ArticlePage } from '../../containers/ArticlePage';
+import { NotFoundPage } from '../NotFoundPage';
 
 const App: FC = () => {
 
@@ -22,4 +22,4 @@ const App: FC = () => {
 	);
 }
 
-export default App;
+export { App };

@@ -1,7 +1,7 @@
 import { FC, useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 
-import { useTypedSelector } from '../../hooks/useTypedSelector';
+import { useTypedSelector } from '../../hooks';
 import { IArticle } from '../../types/articles';
 
 import {
@@ -68,4 +68,4 @@ const ArticlePage: FC = () => {
 	);
 };
 
-export default ArticlePage;
+export { ArticlePage };
