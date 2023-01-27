@@ -14,7 +14,7 @@
 		"@types/node": "^18.11.9",
 		"@types/react": "^17.0.37",
 		"@types/react-dom": "^17.0.11",
-		"@types/react-redux": "^7.1.24",
+		"@types/react-redux": "^7.1.25",
 		"axios": "^1.2.5",
 		"material-ui-image": "^3.3.2",
 		"node-sass": "^8.0.0",
